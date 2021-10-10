@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backlogin"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="20dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/cdglogo_login">
+    </ImageView>
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Adresse mail"
+            android:background="@drawable/edit"
+            android:inputType="textEmailAddress"
+            android:textStyle="italic"
+            android:drawableRight="@drawable/email"
+            android:drawablePadding="4dp"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:elevation="6dp"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:background="@drawable/edit"
+            android:inputType="textPassword"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:elevation="6dp"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/password"
+            android:drawableTint="@color/white"
+            android:textStyle="italic"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/emailText">
+        </EditText>
+
+    <Button
+        android:id="@+id/btnCnx"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passText"
+        android:background="@drawable/editbutton"
+        android:text="Se connecter"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#0066ce">
+    </Button>
+    
+</LinearLayout>

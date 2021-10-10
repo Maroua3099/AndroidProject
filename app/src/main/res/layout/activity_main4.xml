@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bloqué"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Débloqué"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"/>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer"
+                android:textAllCaps="false"
+                android:layout_below="@id/radio2"
+                android:backgroundTint="#0066ce"
+                android:layout_gravity="center_horizontal">
+            </Button>
+
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

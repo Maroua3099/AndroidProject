@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_back"
+    tools:context=".MainActivity5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u00A0 \u00A0 Modifier les informations"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/edituser"
+            android:layout_marginLeft="30dp"
+            android:drawableTint="#808080"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+        </TextView>
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u00A0 \u00A0 Bloqué"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/unvailable"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/txt3"
+            android:drawableTint="#808080"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

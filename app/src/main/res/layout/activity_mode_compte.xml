@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".ModeCompteActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#badaff"
+        android:elevation="15dp"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:checked="false">
+        </RadioButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloquer le compte"
+            android:layout_marginLeft="80dp"
+            android:textSize="18dp"
+            android:layout_centerVertical="true">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/comptedebloque"
+            android:layout_marginRight="15dp">
+        </ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#badaff"
+        android:elevation="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:checked="false">
+        </RadioButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débloquer le compte"
+            android:layout_marginLeft="80dp"
+            android:textSize="18dp"
+            android:layout_centerVertical="true">
+        </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/comptebloque"
+                android:layout_marginRight="15dp">
+            </ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

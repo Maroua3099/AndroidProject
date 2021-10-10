@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterUserActivity"
+    android:background="#EEEEEE">
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="#0066ce"
+        android:visibility="gone">
+    </ProgressBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier profil"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#0066ce"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="70dp">
+        <EditText
+            android:id="@+id/txtnomcomplet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="Nom complet"
+            android:background="@drawable/edit2"
+            android:padding="10dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtnomcomplet"
+            android:background="@drawable/edit2"
+            android:padding="10dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtemail"
+            android:background="@drawable/edit2"
+            android:padding="10dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txttel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Téléphone"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtpass"
+            android:background="@drawable/edit2"
+            android:padding="10dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_modifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0066ce"
+            android:text="Modifier"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/txttel">
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>

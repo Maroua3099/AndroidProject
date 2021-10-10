@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterUserActivity"
+    android:background="#EEEEEE">
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="#0066ce"
+        android:visibility="gone">
+    </ProgressBar>
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nouveau utilisateur"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#0066ce"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="550dp"
+           android:layout_marginTop="70dp">
+       <EditText
+           android:id="@+id/nomUser"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_marginTop="30dp"
+           android:hint="Nom"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </EditText>
+
+       <EditText
+           android:id="@+id/prenomUser"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Prénom"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_below="@id/nomUser"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </EditText>
+
+       <EditText
+           android:id="@+id/emailUser"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Adresse mail"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_below="@id/prenomUser"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </EditText>
+
+       <EditText
+           android:id="@+id/motdepasseUSer"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Mot de passe"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_below="@id/emailUser"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </EditText>
+
+       <EditText
+           android:id="@+id/telUser"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Téléphone"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_below="@id/motdepasseUSer"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </EditText>
+           <TextView
+               android:id="@+id/filUser"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Choisissez une filiale:"
+               android:textSize="17dp"
+               android:textStyle="bold"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="35dp"
+               android:layout_below="@id/telUser"
+               android:textColor="#0066ce">
+           </TextView>
+       <Spinner
+           android:id="@+id/spinnerFil"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="20dp"
+           android:layout_below="@id/filUser"
+           android:background="@drawable/edit2"
+           android:padding="10dp">
+       </Spinner>
+           <Button
+               android:id="@+id/btn_inscrip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:backgroundTint="#0066ce"
+               android:text="Continuer"
+               android:textStyle="bold"
+               android:textAllCaps="false"
+               android:textSize="15dp"
+               android:layout_marginTop="35dp"
+               android:textColor="@color/white"
+               android:layout_below="@id/spinnerFil"
+               android:drawableRight="@drawable/continuer"
+               android:drawableTint="@color/white">
+           </Button>
+       </RelativeLayout>
+</RelativeLayout>
